@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos - Delivery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Isometra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Federo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="178755-removebg-preview.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="tarjeta">
+      <h1 class="fascinate-regular">REALIZA TU PEDIDO</h1>
+      <p class="sub">Delivery - Huamanga</p>
+
+      <form id="formPedido" novalidate>
+        <label for="nombre">Nombre Completo:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          maxlength="60"
+          required
+          placeholder="Ej. Leao Panduro Mamani"
+        />
+
+        <label for="direccion">Dirección:</label>
+        <input
+          type="text"
+          id="direccion"
+          name="direccion"
+          maxlength="100"
+          required
+          placeholder="ej. Jr. Wari N° 245, Urb. 16 de Abril"
+        />
+
+        <label for="celular">Celular:</label>
+        <input
+          type="tel"
+          id="celular"
+          name="celular"
+          maxlength="9"
+          required
+          pattern="[0-9]{9}"
+          inputmode="numeric"
+          placeholder="9 dígitos"
+        />
+
+        <button type="submit">Enviar pedido</button>
+      </form>
+
+      <p id="mensaje" role="alert"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
